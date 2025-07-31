@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel | Sneh Shilp Studio</title>
+  <link rel="stylesheet" href="css/admin.css" />
+  <script src="js/admin.js" defer></script>
+</head>
+<body>
+
+  <!-- Simple Login Screen -->
+  <div id="login-screen" class="centered">
+    <h2>Admin Login</h2>
+    <input type="password" id="admin-password" placeholder="Enter password" />
+    <button onclick="login()">Login</button>
+    <p id="login-error" class="error-msg"></p>
+  </div>
+
+  <!-- Admin Dashboard -->
+  <div id="admin-dashboard" class="hidden">
+    <nav class="admin-nav">
+      <h1>Admin Panel</h1>
+      <button onclick="logout()">Logout</button>
+    </nav>
+
+    <section>
+      <h2>Manage Gallery</h2>
+      <div class="admin-gallery">
+        <div class="admin-card">
+          <img src="../assets/images/gallery1.jpg" alt="Gallery Image" />
+          <button>Delete</button>
+        </div>
+        <div class="admin-card">
+          <img src="../assets/images/gallery2.jpg" alt="Gallery Image" />
+          <button>Delete</button>
+        </div>
+        <!-- More thumbnails here -->
+      </div>
+      <input type="file" />
+      <button>Add Image</button>
+    </section>
+
+    <section>
+      <h2>Edit Services</h2>
+      <textarea rows="5">Update service descriptions here...</textarea>
+      <button>Save Changes</button>
+    </section>
+
+    <section>
+      <h2>Job Postings</h2>
+      <ul>
+        <li>✓ Junior Architect <button>Remove</button></li>
+        <li>✓ Interior Designer <button>Remove</button></li>
+      </ul>
+      <input type="text" placeholder="Add new position" />
+      <button>Add Position</button>
+    </section>
+  </div>
+
+</body>
+</html>

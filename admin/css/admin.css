@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 0;
+    margin: 0;
+  }
+  .centered {
+    max-width: 300px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  input, textarea, button {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+  button {
+    background: crimson;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #b20000;
+  }
+  .hidden {
+    display: none;
+  }
+  .admin-nav {
+    background: #111;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  section {
+    padding: 2rem;
+  }
+  .admin-gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .admin-card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 150px;
+    text-align: center;
+  }
+  .admin-card img {
+    width: 100%;
+    height: auto;
+  }
+  .error-msg {
+    color: red;
+    font-size: 0.9rem;
+  }
