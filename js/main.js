@@ -11,8 +11,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // (Optional) MOBILE MENU TOGGLE SUPPORT
 // If you add a hamburger menu later
-const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector("nav ul");
+const navToggle = document.querySelector("#menuToggle");
+const navMenu = document.querySelector("#navMenu");
 
 if (navToggle) {
   navToggle.addEventListener("click", () => {
